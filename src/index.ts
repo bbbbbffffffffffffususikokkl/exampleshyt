@@ -11,7 +11,7 @@
  */
 
 import { deobfuscate } from './engine';
-import { defaultConfig, Config } from './deobfuscator/transformations/config';
+import { defaultConfig, Config } from './deobfuscator/config';
 
 export default {
     async fetch(request: Request): Promise<Response> {

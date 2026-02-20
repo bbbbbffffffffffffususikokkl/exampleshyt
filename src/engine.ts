@@ -8,7 +8,7 @@
 
 import { parse } from '@babel/parser';
 import { Deobfuscator } from './deobfuscator/deobfuscator';
-import { Config, defaultConfig } from './deobfuscator/transformations/config';
+import { Config, defaultConfig } from './deobfuscator/config';
 
 export { Config, defaultConfig };
 
