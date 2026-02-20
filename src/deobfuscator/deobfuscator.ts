@@ -1,21 +1,21 @@
 import generate from '@babel/generator';
 import * as t from '@babel/types';
 import traverse from '@babel/traverse';
-import { TransformationType } from './transformations/transformation';
-import { Config, defaultConfig } from './transformations/config';
-import { ObjectSimplifier } from './transformations/objects/objectSimplifier';
-import { ProxyFunctionInliner } from './transformations/proxyFunctions/proxyFunctionInliner';
-import { UnusedVariableRemover } from './transformations/variables/unusedVariableRemover';
-import { ConstantPropgator } from './transformations/variables/constantPropagator';
-import { ReassignmentRemover } from './transformations/variables/reassignmentRemover';
-import { StringRevealer } from './transformations/strings/stringRevealer';
-import { DeadBranchRemover } from './transformations/controlFlow/deadBranchRemover';
-import { SequenceSplitter } from './transformations/controlFlow/sequenceSplitter';
-import { PropertySimplifier } from './transformations/properties/propertySimplifier';
-import { ExpressionSimplifier } from './transformations/expressions/expressionSimplifier';
-import { ControlFlowRecoverer } from './transformations/controlFlow/controlFlowRecoverer';
-import { ObjectPacker } from './transformations/objects/objectPacker';
-import { AntiTamperRemover } from './transformations/antiTamper/antiTamperRemover';
+import { TransformationType } from './transformation';
+import { Config, defaultConfig } from './config';
+import { ObjectSimplifier } from './objectSimplifier';
+import { ProxyFunctionInliner } from './proxyFunctionInliner';
+import { UnusedVariableRemover } from './unusedVariableRemover';
+import { ConstantPropgator } from './constantPropagator';
+import { ReassignmentRemover } from './reassignmentRemover';
+import { StringRevealer } from './stringRevealer';
+import { DeadBranchRemover } from './deadBranchRemover';
+import { SequenceSplitter } from './sequenceSplitter';
+import { PropertySimplifier } from './propertySimplifier';
+import { ExpressionSimplifier } from './expressionSimplifier';
+import { ControlFlowRecoverer } from './controlFlowRecoverer';
+import { ObjectPacker } from './objectPacker';
+import { AntiTamperRemover } from './antiTamperRemover';
 
 export class Deobfuscator {
     private readonly ast: t.File;
